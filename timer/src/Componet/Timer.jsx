@@ -6,15 +6,14 @@ export const Timer = () => {
   var timer;
 
   useEffect(() => {
-    
-      timer = setInterval(() => {
-        setSeconds(seconds + 1);
-        if (seconds == 59) {
-          setMinute(minute + 1);
-          setSeconds(0);
-        }
-      },1000);
-      return () => {
+    timer = setInterval(() => {
+      setSeconds(seconds + 1);
+      if (seconds == 59) {
+        setMinute(minute + 1);
+        setSeconds(0);
+      }
+    }, 1000);
+    return () => {
       clearInterval(timer);
     };
   });
@@ -31,7 +30,7 @@ export const Timer = () => {
     <div>
       <h1>Stop watch</h1>
       <p>
-        {minute} : {seconds}
+        {minute < 10? "0"+minute:minute} : {seconds<10?"0"+seconds:seconds}
       </p>
       <button onClick={handleStop}>Stop</button>
       <button onClick={handleRestart}>Restart</button>
