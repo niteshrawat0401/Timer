@@ -1,0 +1,31 @@
+.outerDiv{
+    border: 1px solid #4255a4;
+    width: 12%;
+    height: 3rem;
+    background-color: #4255a4;
+    color: white;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.innerDiv{
+    margin-top: 7px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.btnDiv{
+    /* border: 1px solid  red; */
+    margin: auto;
+    width: 15%;
+    margin-top: 2rem;
+    justify-content: space-around;
+}
+
+.btnDiv button{
+    background-color: #2d2d2d;
+    color: white;
+    height: 2rem;
+    width: 80%;
+    font-weight: bold;
+    font-size: 15px;
+}
